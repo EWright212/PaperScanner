@@ -7,6 +7,7 @@ public class MathsPaperScanner {
         var result = 0;
         var firstInt = Integer.parseInt(component[0]);
         var secondInt = Integer.parseInt(component[2]);
+
         String operator = component[1];
         result = firstInt;
 
@@ -20,8 +21,11 @@ public class MathsPaperScanner {
             result += secondInt;
         }
 
-//        For debugging
+        if (component.length > 3){
+            var thirdInt = Integer.parseInt(component[4]);
+            result += thirdInt;
 
+        }
         return result;
     }
 }

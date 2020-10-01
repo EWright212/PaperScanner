@@ -30,6 +30,11 @@ public class MathsPaperScannerTest {
     public void simpleDivisionTwoIntegers(){
         assertEquals(3, mathsPaperScanner.evaluate("6 / 2"));
         assertEquals(3, mathsPaperScanner.evaluate("12 / 4"));
-
     }
+
+    @Test
+    public void simpleAdditionThreeIntegers(){
+        assertEquals(3, mathsPaperScanner.evaluate("1 + 1 + 1"));
+    }
+
 }
