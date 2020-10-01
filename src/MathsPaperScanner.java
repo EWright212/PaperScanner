@@ -15,6 +15,9 @@ public class MathsPaperScanner {
         } else if (operator.equals("-")){
             result += firstInt;
             result -= secondInt;
+        }  else if (operator.equals("/")){
+            result += firstInt;
+            result /= secondInt;
         } else {
             result += firstInt;
             result += secondInt;

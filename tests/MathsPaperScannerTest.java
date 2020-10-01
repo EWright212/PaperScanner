@@ -22,5 +22,14 @@ public class MathsPaperScannerTest {
     @Test
     public void simpleSubtractionTwoIntegers(){
         assertEquals(1, mathsPaperScanner.evaluate("2 - 1"));
+        assertEquals(5, mathsPaperScanner.evaluate("15 - 10"));
+
+    }
+
+    @Test
+    public void simpleDivisionTwoIntegers(){
+        assertEquals(3, mathsPaperScanner.evaluate("6 / 2"));
+        assertEquals(3, mathsPaperScanner.evaluate("12 / 4"));
+
     }
 }
