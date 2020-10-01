@@ -33,16 +33,28 @@ public class MathsPaperScannerTest {
     }
 
     @Test
-    public void simpleAdditionThreeIntegers() {
+    public void simpleAdditionMultipleIntegers() {
         assertEquals(3, mathsPaperScanner.evaluate("1 + 1 + 1"));
         assertEquals(4, mathsPaperScanner.evaluate("1 + 1 + 1 + 1"));
 
     }
 
     @Test
-    public void simpleMultiplicationThreeIntegers() {
+    public void simpleMultiplicationMultipleIntegers() {
         assertEquals(8, mathsPaperScanner.evaluate("2 * 2 * 2"));
         assertEquals(27, mathsPaperScanner.evaluate("3 * 3 * 3"));
+
+    }
+    @Test
+    public void simpleDivisionMultipleIntegers() {
+        assertEquals(2, mathsPaperScanner.evaluate("8 / 2 / 2"));
+        assertEquals(3, mathsPaperScanner.evaluate("27 / 3 / 3"));
+
+    }
+    @Test
+    public void simpleSubtractionMultipleIntegers() {
+        assertEquals(4, mathsPaperScanner.evaluate("8 - 2 - 2"));
+        assertEquals(5, mathsPaperScanner.evaluate("10 - 3 - 2"));
 
     }
 
