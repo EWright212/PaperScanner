@@ -6,13 +6,18 @@ public class MathsPaperScanner {
 
         String[] component = expression.split(" ");
         var result = 0;
+        var firstInt = Integer.parseInt(component[0]);
+        var secondInt = Integer.parseInt(component[2]);
+        String operator = component[1];
+
+        if (operator.equals("*")) {
+            result = (firstInt * secondInt);
+        } else {
+            result += firstInt;
+            result += secondInt;
+        }
 
 //        For debugging
-        System.out.print(Arrays.toString(component));
-
-        result += Integer.parseInt(component[0]);
-        result += Integer.parseInt(component[2]);
-
 
         return result;
     }

@@ -10,6 +10,10 @@ public class MathsPaperScannerTest {
     public void simpleAdditionTwoIntegers(){
         assertEquals(2, mathsPaperScanner.evaluate("1 + 1"));
         assertEquals(4, mathsPaperScanner.evaluate("2 + 2"));
+    }
 
+    @Test
+    public void simpleMultiplicationTwoIntegers(){
+        assertEquals(1, mathsPaperScanner.evaluate("1 * 1"));
     }
 }
