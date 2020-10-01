@@ -42,6 +42,8 @@ public class MathsPaperScannerTest {
     @Test
     public void simpleMultiplicationThreeIntegers() {
         assertEquals(8, mathsPaperScanner.evaluate("2 * 2 * 2"));
+        assertEquals(27, mathsPaperScanner.evaluate("3 * 3 * 3"));
+
     }
 
 }
