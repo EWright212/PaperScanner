@@ -17,7 +17,10 @@ public class MathsPaperScannerTest {
         assertEquals(1, mathsPaperScanner.evaluate("1 * 1"));
         assertEquals(5, mathsPaperScanner.evaluate("5 * 1"));
         assertEquals(15, mathsPaperScanner.evaluate("5 * 3"));
+    }
 
-
+    @Test
+    public void simpleSubtractionTwoIntegers(){
+        assertEquals(1, mathsPaperScanner.evaluate("2 - 1"));
     }
 }

@@ -12,6 +12,9 @@ public class MathsPaperScanner {
 
         if (operator.equals("*")) {
             result = (firstInt * secondInt);
+        } else if (operator.equals("-")){
+            result += firstInt;
+            result -= secondInt;
         } else {
             result += firstInt;
             result += secondInt;
