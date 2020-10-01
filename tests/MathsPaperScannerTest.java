@@ -15,5 +15,9 @@ public class MathsPaperScannerTest {
     @Test
     public void simpleMultiplicationTwoIntegers(){
         assertEquals(1, mathsPaperScanner.evaluate("1 * 1"));
+        assertEquals(5, mathsPaperScanner.evaluate("5 * 1"));
+        assertEquals(15, mathsPaperScanner.evaluate("5 * 3"));
+
+
     }
 }
