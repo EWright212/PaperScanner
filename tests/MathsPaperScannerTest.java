@@ -9,6 +9,7 @@ public class MathsPaperScannerTest {
     @Test
     public void simpleAdditionTwoIntegers(){
         assertEquals(2, mathsPaperScanner.evaluate("1 + 1"));
+        assertEquals(4, mathsPaperScanner.evaluate("2 + 2"));
 
     }
 }
