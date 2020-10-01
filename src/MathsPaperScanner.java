@@ -5,11 +5,12 @@ public class MathsPaperScanner {
 
         for (int i = 2; i < component.length; i += 2) {
             Integer currentNumber = Integer.parseInt(component[i]);
-            if (component[i - 1].equals("*")) {
+            String operator = component[i - 1];
+            if (operator.equals("*")) {
                 result *= currentNumber;
-            } else if (component[i - 1].equals("-")) {
+            } else if (operator.equals("-")) {
                 result -= currentNumber;
-            } else if (component[i - 1].equals("/")) {
+            } else if (operator.equals("/")) {
                 result /= currentNumber;
             } else {
                 result += currentNumber;
