@@ -57,5 +57,19 @@ public class MathsPaperScannerTest {
         assertEquals(5, mathsPaperScanner.evaluate("10 - 3 - 2"));
 
     }
+    @Test
+    public void multipleOperationsWithMultipleIntegers() {
+        assertEquals(8, mathsPaperScanner.evaluate("8 - 2 + 2"));
+        assertEquals(2, mathsPaperScanner.evaluate("2 * 2 / 2 + 1 - 1"));
+
+    }
+
+    @Test
+    public void testingNegatives() {
+        assertEquals(-2, mathsPaperScanner.evaluate("8 - 8 - 2"));
+        assertEquals(-7, mathsPaperScanner.evaluate("-5 - 2"));
+        assertEquals(-3, mathsPaperScanner.evaluate("-5 - -2"));
+
+    }
 
 }
